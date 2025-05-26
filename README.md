@@ -73,7 +73,7 @@ A comprehensive web application for monitoring website uptime and performance wi
    ```
 
 3. **Access the application**
-   - Web Dashboard: http://localhost:8501
+   - Web Dashboard: http://localhost:8000
    - API Documentation: http://localhost:8000/docs
 
 ## 📊 Usage
@@ -177,63 +177,9 @@ DATABASE_PATH=uptime_monitor.db
 - Foreign key constraints for data integrity
 - SQL injection protection with parameterized queries
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**API Connection Errors**
-- Ensure FastAPI server is running on port 8000
-- Check firewall settings and port availability
-
-**Email Notifications Not Working**
-- Verify Gmail App Password (not regular password)
-- Check `.env` file configuration
-- Ensure 2FA is enabled on Gmail account
-
-**Database Locked Errors**
-- SQLite WAL mode should handle concurrent access
-- Check file permissions on database file
-- Restart services if database corruption occurs
-
-**URL Check Failures**
-- Verify URLs are accessible from server
-- Check SSL certificate validity
-- Review timeout settings for slow sites
-
 ### Performance Optimization
 - **Database Indexing**: Indexes on user_id, url_id, and timestamp
 - **Connection Pooling**: aiohttp connector limits and reuse
 - **Concurrent Checks**: Async processing of multiple URLs
 - **WAL Mode**: SQLite Write-Ahead Logging for better concurrency
-
-## 🤝 Contributing
-
-### Development Setup
-1. Fork the repository
-2. Create a feature branch
-3. Install development dependencies
-4. Make your changes
-5. Test thoroughly
-6. Submit a pull request
-
-### Code Style
-- Follow PEP 8 for Python code
-- Use type hints where appropriate
-- Add docstrings for public functions
-- Include error handling and logging
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🆘 Support
-
-For issues, questions, or feature requests, please:
-1. Check the troubleshooting section above
-2. Search existing issues in the repository
-3. Create a new issue with detailed information
-4. Include logs and configuration details when reporting bugs
-
----
-
 **Happy Monitoring!** 🔍✨
