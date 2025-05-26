@@ -64,7 +64,7 @@ A comprehensive web application for monitoring website uptime and performance wi
 
 1. **Start the API server**
    ```bash
-   uvicorn api_backend:app --reload --host 0.0.0.0 --port 8000
+   python main.py
    ```
 
 2. **Start the web interface** (in a new terminal)
