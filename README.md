@@ -183,3 +183,20 @@ DATABASE_PATH=uptime_monitor.db
 - **Concurrent Checks**: Async processing of multiple URLs
 - **WAL Mode**: SQLite Write-Ahead Logging for better concurrency
 **Happy Monitoring!** 🔍✨
+
+## 🐳 Docker Deployment
+
+This project supports Docker-based deployment using two containers: one for the backend and one for the frontend.
+
+### Build and Run
+
+```
+cd dockerized
+docker-compose up --build
+```
+
+### To stop and clean up:
+
+```docker-compose down```
+
+Both the dockerized and non-dockerized versions are available in this repo.
